@@ -6,11 +6,13 @@ import '../model/database_model.dart';
 import 'edir_screen.dart';
 import 'task_screen.dart';
 
-class TaskListScreen extends StatelessWidget {
-  final TaskController taskController = Get.put(TaskController());
+class HomeScreen extends StatelessWidget {
+
+  const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final TaskController taskController = Get.put(TaskController());
     return Scaffold(
       appBar: AppBar(
         leading: Icon(
